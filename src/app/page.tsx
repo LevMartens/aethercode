@@ -7,6 +7,7 @@ import { FloatingDockSection } from "@/components/sections/FloatingDockSection";
 import { FeaturesGlowCards } from "@/components/sections/FeaturesGlowCards";
 import { LinkPreviewGrid } from "@/components/sections/LinkPreviewGrid";
 import { Footer } from "@/components/navigation/Footer";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
       </Section>
 
       {/* PROBLEM / SOLUTION (ContainerScroll) */}
-      <Section id="solution">
+      <Section id="solution" className="py-10 md:py-16 -mt-8 ">
         <ContainerScrollSection />
       </Section>
 
@@ -37,8 +38,12 @@ export default function Page() {
         <LinkPreviewGrid />
       </Section>
 
+      <Section id="contact">
+        <ContactSection />
+      </Section>
+
       {/* CTA DOCK (FloatingDock) */}
-      <FloatingDockSection />
+      {/* <FloatingDockSection /> */}
 
       <Footer />
     </main>

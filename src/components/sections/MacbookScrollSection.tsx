@@ -17,10 +17,7 @@ export function MacbookScrollSection() {
         <div className="aspect-video rounded-xl border bg-muted" />
         <div className="aspect-video rounded-xl border bg-muted" />
       </div>
-      <p className="mt-4 text-muted-foreground">
-        Drop in your screen recordings or replace this component with
-        Aceternity’s MacbookScroll.
-      </p>
+      <p className="mt-4 text-muted-foreground"></p>
     </div>
   );
 }
