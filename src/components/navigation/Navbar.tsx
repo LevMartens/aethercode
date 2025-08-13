@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "../ThemeToggle";
 
 const NAV_ITEMS = [
   { href: "#home", label: "Home" },
@@ -47,6 +48,7 @@ export function Navbar() {
         >
           Lev Portfolio
         </Link>
+        <ThemeToggle />
       </nav>
     </header>
   );
