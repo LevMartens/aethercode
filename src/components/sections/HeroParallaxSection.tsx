@@ -5,38 +5,32 @@ const products = [
   {
     title: "Nørish — AI meal logging",
     link: "#work",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+    thumbnail: "/medisync-basic.png",
   },
   {
     title: "White-label demo (Meal-Prep)",
     link: "#demo",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    thumbnail: "medisync-chat.png",
   },
   {
     title: "Coach dashboard",
     link: "#services",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    thumbnail: "norish-1.png",
   },
   {
     title: "iOS listing",
     link: "#work",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    thumbnail: "medisync-chat.png",
   },
   {
     title: "Android listing",
     link: "#work",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    thumbnail: "medisync-chat.png",
   },
   {
     title: "Brand system",
     link: "#services",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    thumbnail: "medisync-chat.png",
   },
   // add up to 15 to fill rows nicely
 ];

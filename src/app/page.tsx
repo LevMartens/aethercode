@@ -8,13 +8,14 @@ import { FeaturesGlowCards } from "@/components/sections/FeaturesGlowCards";
 import { LinkPreviewGrid } from "@/components/sections/LinkPreviewGrid";
 import { Footer } from "@/components/navigation/Footer";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { cn } from "@/lib/utils";
 
 export default function Page() {
   return (
     <main>
       <Navbar />
       {/* HERO */}
-      <Section id="home" className="pt-24">
+      <Section id="home" className={cn("scroll-mt-0 py-0 md:py-0")}>
         <HeroParallaxSection />
       </Section>
 
