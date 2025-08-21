@@ -126,7 +126,7 @@ export const ProductCard = ({
       className="group/product relative h-[700px] w-[320px] shrink-0" // Taller and narrower for mobile screens
     >
       <a href={product.link} className="block group-hover/product:shadow-2xl">
-        <div className="relative h-full w-full overflow-hidden rounded-[20px] bg-gray-100 shadow-lg">
+        <div className="relative h-full w-full overflow-hidden rounded-[35px] bg-gray-100 shadow-lg">
           <img
             src={product.thumbnail}
             className="h-full w-full object-contain" // Changed to object-contain to show full image

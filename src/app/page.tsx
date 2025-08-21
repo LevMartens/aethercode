@@ -20,7 +20,7 @@ export default function Page() {
       </Section>
 
       {/* PROBLEM / SOLUTION (ContainerScroll) */}
-      <Section id="solution" className="py-10 md:py-16 -mt-8 ">
+      <Section id="solution" className={cn("scroll-mt-0 py-0 md:py-0 ")}>
         <ContainerScrollSection />
       </Section>
 

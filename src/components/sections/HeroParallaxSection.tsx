@@ -25,12 +25,17 @@ const products = [
   {
     title: "Android listing",
     link: "#work",
-    thumbnail: "medisync-chat.png",
+    thumbnail: "norish2.png",
   },
   {
     title: "Brand system",
     link: "#services",
     thumbnail: "medisync-chat.png",
+  },
+  {
+    title: "iOS listing",
+    link: "#work",
+    thumbnail: "lunaflow.png",
   },
   // add up to 15 to fill rows nicely
 ];
