@@ -42,13 +42,15 @@ export function Navbar() {
             </a>
           ))}
         </div>
-        <Link
-          href="/lev-portfolio"
-          className="rounded-full border px-3 py-1 text-xs hover:bg-accent"
-        >
-          Lev Portfolio
-        </Link>
-        <ThemeToggle />
+        <div className="flex items-center gap-3">
+          <Link
+            href="/lev-portfolio"
+            className="rounded-full border px-3 py-1 text-xs hover:bg-accent"
+          >
+            Lev Portfolio
+          </Link>
+          <ThemeToggle />
+        </div>
       </nav>
     </header>
   );

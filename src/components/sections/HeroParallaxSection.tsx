@@ -5,7 +5,7 @@ const products = [
   {
     title: "Nørish — AI meal logging",
     link: "#work",
-    thumbnail: "/medisync-basic.png",
+    thumbnail: "/norish2.png",
   },
   {
     title: "White-label demo (Meal-Prep)",
@@ -20,7 +20,7 @@ const products = [
   {
     title: "iOS listing",
     link: "#work",
-    thumbnail: "medisync-chat.png",
+    thumbnail: "lunaflow.png",
   },
   {
     title: "Android listing",
