@@ -25,12 +25,12 @@ export default function Page() {
       </Section>
 
       {/* PRODUCT DEMO (MacbookScroll) */}
-      <Section id="demo">
+      {/* <Section id="demo">
         <MacbookScrollSection />
-      </Section>
+      </Section> */}
 
       {/* SERVICES (GlowingEffect on cards) */}
-      <Section id="services">
+      <Section id="services" className={cn("scroll-mt-0 py-0 md:py-0 ")}>
         <FeaturesGlowCards />
       </Section>
 

@@ -7,6 +7,7 @@ import {
   useSpring,
   type MotionValue,
 } from "motion/react";
+import { GlowingEffect } from "./glowing-effect";
 
 export const HeroParallax = ({
   products,
@@ -123,7 +124,7 @@ export const ProductCard = ({
     <motion.div
       style={{ x: translate, willChange: "transform" }}
       whileHover={{ y: -20 }}
-      className="group/product relative h-[700px] w-[320px] shrink-0" // Taller and narrower for mobile screens
+      className="group/product relative h-[700px] w-[320px] shrink-0 rounded-[35px]" // Taller and narrower for mobile screens
     >
       <a href={product.link} className="block group-hover/product:shadow-2xl">
         <div className="relative h-full w-full overflow-hidden rounded-[35px] bg-gray-100 shadow-lg">
@@ -133,7 +134,7 @@ export const ProductCard = ({
             alt={product.title}
           />
           {/* Optional: Phone frame overlay */}
-          <div className="absolute inset-0 pointer-events-none border-[0px] border-gray-200 rounded-[20px]"></div>
+          <div className="absolute inset-0 pointer-events-none border-[0px] border-gray-200 rounded-[35px]"></div>
         </div>
       </a>
       <div className="pointer-events-none absolute inset-0 h-full w-full bg-black opacity-0 group-hover/product:opacity-60 rounded-[20px] transition-opacity duration-300"></div>
