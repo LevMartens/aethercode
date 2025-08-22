@@ -104,7 +104,7 @@ export const Header = () => {
       <h1 className="text-2xl font-bold md:text-7xl">
         Apps that speak <br /> your language
       </h1>
-      <p className="mt-8 max-w-2xl text-base md:text-xl text-muted-foreground">
+      <p className="mt-4 md:mt-8 max-w-2xl text-base md:text-xl text-muted-foreground">
         We&apos;re crafting intelligent applications with elegant design that
         understand context, anticipate needs, and solve problems while pushing
         the boundaries of what AI can accomplish.

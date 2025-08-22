@@ -52,7 +52,7 @@ export function Navbar() {
               as="button"
               className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 rounded-full border px-3 py-1 text-xs hover:bg-accent"
             >
-              <Link href="/lev-portfolio">Lev's Portfolio</Link>
+              <Link href="/lev-portfolio">Lev&apos;s Portfolio</Link>
             </HoverBorderGradient>
             <ThemeToggle />
           </div>
@@ -63,7 +63,6 @@ export function Navbar() {
           <MobileNavHeader>
             <AetherCodeLogo />
             <div className="flex items-center gap-3">
-              <ThemeToggle />
               <MobileNavToggle
                 isOpen={isMobileMenuOpen}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -76,6 +75,9 @@ export function Navbar() {
             onClose={() => setIsMobileMenuOpen(false)}
             className="backdrop-blur supports-[backdrop-filter]:bg-background/95"
           >
+            <div className="flex justify-end w-full">
+              <ThemeToggle />
+            </div>
             {NAV_ITEMS.map((item, idx) => (
               <a
                 key={`mobile-link-${idx}`}
@@ -96,7 +98,7 @@ export function Navbar() {
                   href="/lev-portfolio"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Lev's Portfolio
+                  Lev&apos;s Portfolio
                 </Link>
               </HoverBorderGradient>
             </div>
