@@ -7,7 +7,6 @@ import {
   useSpring,
   type MotionValue,
 } from "motion/react";
-import { GlowingEffect } from "./glowing-effect";
 
 export const HeroParallax = ({
   products,

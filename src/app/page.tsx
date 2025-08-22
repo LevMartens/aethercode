@@ -2,8 +2,6 @@ import { Navbar } from "@/components/navigation/Navbar";
 import { Section } from "@/components/sections/Section";
 import { HeroParallaxSection } from "@/components/sections/HeroParallaxSection";
 import { ContainerScrollSection } from "@/components/sections/ContainerScrollSection";
-import { MacbookScrollSection } from "@/components/sections/MacbookScrollSection";
-import { FloatingDockSection } from "@/components/sections/FloatingDockSection";
 import { FeaturesGlowCards } from "@/components/sections/FeaturesGlowCards";
 import { LinkPreviewGrid } from "@/components/sections/LinkPreviewGrid";
 import { Footer } from "@/components/navigation/Footer";

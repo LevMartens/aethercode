@@ -1,6 +1,6 @@
 // src/components/ui/sparkles.tsx
 "use client";
-import React, { useId, useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { motion, useAnimation } from "motion/react";
