@@ -3,7 +3,7 @@ import { Section } from "@/components/sections/Section";
 import { HeroParallaxSection } from "@/components/sections/HeroParallaxSection";
 import { ContainerScrollSection } from "@/components/sections/ContainerScrollSection";
 import { FeaturesGlowCards } from "@/components/sections/FeaturesGlowCards";
-import { LinkPreviewGrid } from "@/components/sections/LinkPreviewGrid";
+// import { LinkPreviewGrid } from "@/components/sections/LinkPreviewGrid";
 import { Footer } from "@/components/navigation/Footer";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { cn } from "@/lib/utils";
@@ -33,9 +33,9 @@ export default function Page() {
       </Section>
 
       {/* RESOURCES / CASE LINKS (LinkPreview) */}
-      <Section id="work">
+      {/* <Section id="work">
         <LinkPreviewGrid />
-      </Section>
+      </Section> */}
 
       <Section id="contact">
         <ContactSection />
