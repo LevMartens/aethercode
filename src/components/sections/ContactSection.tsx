@@ -6,7 +6,6 @@ import {
   Send,
   Sparkles,
   CheckCircle,
-  Calendar,
   Mail,
   Building,
   User,
@@ -261,8 +260,8 @@ const SuccessMessage: React.FC = () => (
       Project Inquiry Submitted!
     </h3>
     <p className="text-neutral-600 dark:text-neutral-400">
-      We've received your project details and will get back to you within 24
-      hours with next steps.
+      We&apos;ve received your project details and will get back to you within
+      24 hours with next steps.
     </p>
   </motion.div>
 );

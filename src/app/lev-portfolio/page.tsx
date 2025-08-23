@@ -6,9 +6,6 @@ interface NavItem {
   link: string;
 }
 
-interface NavbarProps {
-  items?: NavItem[];
-}
 const NAV_ITEMS: NavItem[] = [
   // { name: "Home", link: "#home" },
   // { name: "Solution", link: "#solution" },
@@ -22,27 +19,54 @@ export default function LevPortfolio() {
       <Navbar items={NAV_ITEMS} />
       <Section id="lev" className="pt-24">
         <div className="mx-auto max-w-3xl px-6">
-          <h1 className="text-3xl md:text-5xl font-bold">Lev — Portfolio</h1>
+          <h1 className="text-3xl md:text-5xl font-bold">
+            Lev&apos;s Portfolio
+          </h1>
           <p className="mt-4 text-muted-foreground">
-            Founder at AetherCode. This page doubles as our founder bio for
-            client pitches and my personal portfolio for roles. Public work
-            samples include Nørish and screenshots of products built while
-            employed at other companies (clearly credited).
+            Founder at AetherCode & Software Engineer at Caesars Entertainment.
           </p>
+
           <div className="mt-10 space-y-6">
             <section>
-              <h2 className="text-xl font-semibold">Highlights</h2>
-              <ul className="mt-3 list-disc pl-6 text-sm md:text-base">
+              <h2 className="text-xl font-semibold">Recent Work</h2>
+              <ul className="mt-3 space-y-2 text-sm md:text-base">
                 <li>
-                  High-traffic web & mobile UIs used by millions globally.
+                  Trading platform for 140+ Caesars traders managing dynamic
+                  sports markets
                 </li>
                 <li>
-                  White‑label AI nutrition engine (Nørish) – Firebase + RN.
+                  Same Game Parlay UIs handling 300,000+ requests/minute during
+                  Super Bowl
                 </li>
-                <li>
-                  Rapid brandable deployments for meal‑prep & fitness brands.
-                </li>
+                <li>Seven sportsbook brands at BetCloud</li>
               </ul>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold">Tech Stack</h2>
+              <p className="mt-3 text-sm md:text-base text-muted-foreground">
+                React, React Native, Next.js, TypeScript, Go, Node.js, Firebase,
+                Kubernetes, GraphQL
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold">Contact</h2>
+              <div className="mt-3 space-x-4 text-sm">
+                <a
+                  href="mailto:levmartens@gmail.com"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  levmartens@gmail.com
+                </a>
+                <span className="text-muted-foreground">•</span>
+                <a
+                  href="https://levmartens.dev"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  levmartens.dev
+                </a>
+              </div>
             </section>
           </div>
         </div>
