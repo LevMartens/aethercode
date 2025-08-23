@@ -31,14 +31,19 @@ export default function LevPortfolio() {
               <h2 className="text-xl font-semibold">Recent Work</h2>
               <ul className="mt-3 space-y-2 text-sm md:text-base">
                 <li>
-                  Trading platform for 140+ Caesars traders managing dynamic
-                  sports markets
+                  Built internal trading platform replacing legacy systems for
+                  140+ Caesars traders across multiple sports
                 </li>
+
                 <li>
-                  Same Game Parlay UIs handling 300,000+ requests/minute during
-                  Super Bowl
+                  Architected scalable theming system powering seven sportsbook
+                  brands that contributed to $86M acquisition offer
                 </li>
-                <li>Seven sportsbook brands at BetCloud</li>
+
+                <li>
+                  Engineered Go microservices deployed to Kubernetes supporting
+                  real-time trading operations under heavy traffic
+                </li>
               </ul>
             </section>
 

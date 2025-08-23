@@ -35,7 +35,7 @@ export default function Page() {
       </Section> */}
 
       {/* SERVICES (GlowingEffect on cards) */}
-      <Section id="services" className={cn("scroll-mt-10 py-0 md:py-20 ")}>
+      <Section id="services" className={cn("scroll-mt-10 py-20 md:py-20 ")}>
         <FeaturesGlowCards />
       </Section>
 
@@ -44,7 +44,7 @@ export default function Page() {
         <LinkPreviewGrid />
       </Section> */}
 
-      <Section id="contact" className={cn("scroll-mt-15 py-0 md:py-10 ")}>
+      <Section id="contact" className={cn("scroll-mt-15 py-10 md:py-10 ")}>
         <ContactSection />
       </Section>
 
