@@ -197,6 +197,7 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
         text-white font-semibold rounded-lg
         shadow-lg shadow-blue-500/25
         transition-all duration-300
+        cursor-pointer
         disabled:opacity-50 disabled:cursor-not-allowed
         overflow-hidden
         group

@@ -13,14 +13,6 @@ import {
 import { ThemeToggle } from "../ThemeToggle";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
-const NAV_ITEMS = [
-  { name: "Home", link: "#home" },
-  { name: "Solution", link: "#solution" },
-  { name: "Demo", link: "#demo" },
-  { name: "Services", link: "#services" },
-  { name: "Work", link: "#work" },
-];
-
 // Custom Logo Component
 const AetherCodeLogo = () => {
   return (
@@ -35,7 +27,16 @@ const AetherCodeLogo = () => {
   );
 };
 
-export function Navbar() {
+interface NavItem {
+  name: string;
+  link: string;
+}
+
+interface NavbarProps {
+  items?: NavItem[];
+}
+
+export function Navbar({ items }: NavbarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -44,7 +45,7 @@ export function Navbar() {
         {/* Desktop Navigation */}
         <NavBody className="backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
           <AetherCodeLogo />
-          <NavItems items={NAV_ITEMS} />
+          <NavItems items={items || []} />
           <div className="flex items-center gap-3">
             <HoverBorderGradient
               containerClassName="rounded-full"
@@ -77,7 +78,7 @@ export function Navbar() {
             <div className="flex justify-end w-full">
               <ThemeToggle />
             </div>
-            {NAV_ITEMS.map((item, idx) => (
+            {(items || []).map((item, idx) => (
               <a
                 key={`mobile-link-${idx}`}
                 href={item.link}

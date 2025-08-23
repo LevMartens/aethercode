@@ -8,10 +8,17 @@ import { Footer } from "@/components/navigation/Footer";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { cn } from "@/lib/utils";
 
+const NAV_ITEMS = [
+  { name: "Home", link: "#home" },
+  { name: "Solution", link: "#solution" },
+  { name: "Services", link: "#services" },
+  { name: "Contact", link: "#contact" },
+];
+
 export default function Page() {
   return (
     <main>
-      <Navbar />
+      <Navbar items={NAV_ITEMS} />
       {/* HERO */}
       <Section id="home" className={cn("scroll-mt-0 py-0 md:py-0")}>
         <HeroParallaxSection />
@@ -28,7 +35,7 @@ export default function Page() {
       </Section> */}
 
       {/* SERVICES (GlowingEffect on cards) */}
-      <Section id="services" className={cn("scroll-mt-0 py-0 md:py-0 ")}>
+      <Section id="services" className={cn("scroll-mt-10 py-0 md:py-20 ")}>
         <FeaturesGlowCards />
       </Section>
 
@@ -37,7 +44,7 @@ export default function Page() {
         <LinkPreviewGrid />
       </Section> */}
 
-      <Section id="contact">
+      <Section id="contact" className={cn("scroll-mt-15 py-0 md:py-10 ")}>
         <ContactSection />
       </Section>
 

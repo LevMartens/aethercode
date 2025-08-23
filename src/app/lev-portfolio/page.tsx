@@ -1,10 +1,25 @@
 import { Navbar } from "@/components/navigation/Navbar";
 import { Section } from "@/components/sections/Section";
 
+interface NavItem {
+  name: string;
+  link: string;
+}
+
+interface NavbarProps {
+  items?: NavItem[];
+}
+const NAV_ITEMS: NavItem[] = [
+  // { name: "Home", link: "#home" },
+  // { name: "Solution", link: "#solution" },
+  // { name: "Services", link: "#services" },
+  // { name: "Contact", link: "#contact" },
+];
+
 export default function LevPortfolio() {
   return (
     <main>
-      <Navbar />
+      <Navbar items={NAV_ITEMS} />
       <Section id="lev" className="pt-24">
         <div className="mx-auto max-w-3xl px-6">
           <h1 className="text-3xl md:text-5xl font-bold">Lev — Portfolio</h1>
